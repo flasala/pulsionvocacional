@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: (auto)[9];
+      grid-template-rows: repeat(9, auto);
+  grid-gap: 1rem;
+  background-color: #fff9d6;
+      grid-template-areas: "box1 box1 box2"  "box3 box3 box4" "box5 box5 box5";
+}
+
+.container .box-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: box1;
+  font-weight: normal;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: none;
+}
+
+.container .box-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: box2;
+  font-weight: normal;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: none;
+}
+
+.container .box-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: box3;
+  font-weight: normal;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: none;
+}
+
+.container .box-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: box4;
+  font-weight: normal;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: none;
+}
+
+.container .box-5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: box5;
+  font-weight: normal;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: #f38a28;
+}
+
+nav {
+  text-align: center;
+}
+
+nav .titulo {
+  letter-spacing: 2px;
+  font-family: "Staatliches", cursive;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #fff9d6;
+  font-size: 0;
+  /* truco por el uso de inline-block*/
+  font-family: 'Baloo Tammudu 2', cursive;
+  border-radius: 2%;
+}
+
+nav ul li {
+  display: inline-block;
+  width: auto;
+  padding: 10px;
+  position: relative;
+  font-size: 20px;
+}
+
+.link {
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+}
+
+nav ul ul {
+  position: absolute;
+  display: none;
+}
+
+nav ul ul ul ul li {
+  display: block;
+}
+
+nav li:hover {
+  background-color: #581845;
+  font-weight: bold;
+  border-radius: 10%;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+nav li:hover a:hover {
+  color: #fff9d6;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul li:hover ul {
+  display: block;
+  background-color: #581845;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 10px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: none;
+}
+
+body h1 {
+  font-family: "Staatliches", cursive;
+  color: #581845;
+}
+
+body h1 .header_titulo {
+  letter-spacing: 2px;
+  font-family: "Staatliches", cursive;
+}
+
+body h2 {
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+  color: #581845;
+}
+
+body h3 {
+  font-weight: bold;
+}
+
+body th {
+  color: #C70039;
+}
+
+body tr {
+  color: #f38a28;
+}
+
+article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem;
+  margin: 1px;
+}
+
+article p {
+  color: #C70039;
+}
+
+article .olRomano {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+}
+
+article .article_subtitulo {
+  color: darkorange;
+  font-family: "Pacifico", cursive;
+}
+
+article .article_parrafo {
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+}
+
+header .header_subtitulo {
+  font-style: italic;
+  font-family: "Pacifico", cursive;
+  font-size: large;
+  color: rgba(102, 158, 102, 0.795);
+}
+
+div .div_formulariocontacto {
+  background-image: url(https://mdn.mozillademos.org/files/12005/starsolid.gif), url(https://developer.cdn.mozilla.net/media/redesign/img/favicon32.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+section .tabla {
+  background-color: #f1e0b9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+section .tabla .tabla_titulo {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 20px;
+}
+
+section .tabla .tabla_elemento {
+  text-align: center;
+}
+
+.sizeCarrousel {
+  width: 600px 300px;
+  margin: 0 auto;
+}
+
+.creacion {
+  font-size: 10px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: goldenrod;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E;
+    /* Yellow */
+  }
+  .column {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: white;
+  }
+  .column {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=estilo2.css.map */

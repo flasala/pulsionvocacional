@@ -1,0 +1,49 @@
+nav{
+    text-align: center;
+    .titulo{
+        letter-spacing: 2px;
+        font-family: $fontstaat;
+    }
+    ul {
+        list-style: none;
+        background-color: #fff9d6;
+        font-size:0; /* truco por el uso de inline-block*/
+        font-family: 'Baloo Tammudu 2', cursive;
+        border-radius: 2%;  
+        li {
+            display: inline-block;
+            width: auto;
+            padding: 10px;
+            position:relative;
+            font-size: 20px;
+        }
+    }
+}
+.link{
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+} 
+nav ul ul {
+    position: absolute;
+    display: none;
+    ul ul li {
+        display: block;
+    }
+} 
+nav li:hover{
+    background-color: #581845;
+    font-weight: bold;
+    border-radius: 10%;
+    transform: scale(1.1, 1.1);
+    a:hover{
+        color: #fff9d6;
+    }
+}
+nav a{
+    text-decoration: none;
+}
+nav ul li:hover ul {
+    display:block;
+    background-color:#581845;
+}

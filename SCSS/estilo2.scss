@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import "container";
+@import "variables";
+@import "nav";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+	display: flex;
+	flex: 1;
+	margin-top: 10px;
+}
+body {
+	display: flex;
+	height: $alto/2;
+	flex-direction: column;
+	padding: 1em;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: none;
+    h1{
+        font-family: $fontstaat;
+        color: $colorvio;
+        .header_titulo{
+            letter-spacing: 2px;
+            font-family: $fontstaat;
+        }
+    }
+    h2{
+        font-family: $fontstaat;
+        font-size: 40px;
+        color: $colorvio;
+    }
+    h3{
+        font-weight: bold;
+    }
+    th{
+        color:#C70039;
+     }
+    tr{
+        color:#f38a28;
+    }
+}
+article{
+    flex:1;
+    padding: 1rem;
+    margin:1px;
+    p{
+        color:#C70039;
+    }
+    .olRomano{
+        list-style-type: upper-roman;
+        list-style-position: inside;
+    }
+    .article_subtitulo{
+        color: darkorange;
+        font-family: $fontpacif;
+    }
+    .article_parrafo{
+        line-height: 1.5;
+    }
+}
+header{
+    text-align: center;
+     .header_subtitulo{
+        font-style: italic;
+        font-family: $fontpacif;
+        font-size: large;
+        color: rgba(102, 158, 102, 0.795);
+    }
+}
+div{
+    .div_formulariocontacto{
+        background-image: url(https://mdn.mozillademos.org/files/12005/starsolid.gif),
+        url(https://developer.cdn.mozilla.net/media/redesign/img/favicon32.png);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: auto;
+    }
+}
+
+section{
+    .tabla{
+        background-color: #f1e0b9;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+        border: none;
+        .tabla_titulo{
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 20px;
+            margin: 20px;}
+        .tabla_elemento{
+            text-align: center;
+        }
+    }    
+}
+
+.sizeCarrousel{
+    width:600px 300px;
+    margin:0 auto;
+}
+.creacion{
+    font-size: 10px;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: goldenrod
+    }
+  }
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #F5CF8E; /* Yellow */
+    }
+    .column {
+        width: 50%;
+      }
+  }
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    body {
+      background-color: white
+    }
+    .column {
+        width: 100%;
+      }
+}
+
