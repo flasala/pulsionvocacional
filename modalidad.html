@@ -6,31 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="SCSS/estilo2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" >
     <title>Pulsión Vocacional - Modalidad</title>
 </head>
 <body>
-    <div class="container column" id=header>
-        <div class="box-1 column">
-            <header>
-            <h1 class="header_titulo">Pulsión Vocacional</h1> 
-            <h2 class="header_subtitulo animate__animated animate__shakeX">Orientación y Re-orientación</h2>
-            </header>
-        </div>
-        <div class="box-2 column">
-            <nav>
-                <ul>
-                <li><a href="index.html" class="link">Home</a></li>
-                <li><a href="sobremi.html" class="link">Sobre mí</a></li>
-                <li><a href="proceso.html" class="link">Proceso</a></li>
-                <li><a href="modalidad.html" class="link">Modalidad</a></li>
-                <li><a href="contacto.html" class="link">Contacto</a>
-                    <ul>
-                        <li><a href="redesociales.html">Redes sociales</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid column">
+            <a class="navbar-brand" href="#"><h1 class="header_titulo titulo">Pulsión Vocacional</h1> 
+                <h2 class="header_subtitulo animate__animated animate__shakeX">Orientación y Re-orientación</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobremi.html">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proceso.html">Proceso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modalidad.html">Modalidad</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="contacto.html" id="navbarDropdownMenuLink" role="button">
+                    Contacto</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="redesociales.html">Redes sociales</a></li>
                     </ul>
                 </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container column" id=header>
         <div class="box-3 column">
             <section>
                 <div id="main">
@@ -84,8 +98,11 @@
             </section>
         </div>
         <div class="box-5 column">
-            <footer id="footer">
-                <p class="creacion">Página creada por Franco Lasala</p> <a href="https://www.linkedin.com/in/franco-lasala/" target="_blank">LinkedIn</a>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-12 p-3 column">
+          <p class="creacion">Página creada por Franco Lasala</p> <a href="https://www.linkedin.com/in/franco-lasala/" target="_blank">LinkedIn</a>
                 <nav>
                     <h2>Secciones</h2>
                     <ul class="ulLinks">
@@ -101,8 +118,7 @@
                         <li><a href="#header" class="link">Ir arriba</a></li>
                     </ul>
                 </nav>
-            </footer>
         </div>
-       </div>      
+    </div>      
 </body>
 </html>
